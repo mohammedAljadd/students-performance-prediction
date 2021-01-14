@@ -1,6 +1,6 @@
 # Students-performance-and-difficulties-prediction
 
-   This project is about using data mining techniques to predict whether or not a student would pass the final exam. from the Student Performance data set from UCI Machine Learning Repository.
+   This project is about using machine learning algorithms to predict whether or not a student would pass the final exam. from the Student Performance data set from UCI Machine Learning Repository.
 
 <div style="text-align:center;padding-top:20px" >
     <img src="https://blog.kinems.com/content/images/2018/04/Tracking_Headline.png" />
