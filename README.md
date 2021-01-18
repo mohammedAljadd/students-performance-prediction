@@ -80,6 +80,35 @@ Now before training our model we have to process our data :
 # Dataset visualization
 
 
+# Model evaluation (metrics) :
+
+
+Before starting training our classifers let us define the metrics that we will use to compare between our three classifiers :
+
+    1) Confusion matrix :
+    
+<img src='https://miro.medium.com/max/2102/1*fxiTNIgOyvAombPJx5KGeA.png' width='440cm'>
+
+    2) F1 score :
+    
+<img src = 'https://www.gstatic.com/education/formulas2/-1/en/f1_score.svg' width='440cm'>
+
+TP = number of true positives <br>
+FP = number of false positives <br>
+FN = number of false negatives <br>
+
+    3) The roc curve : A receiver operating characteristic curve, or ROC curve, 
+    is a graphical plot that illustrates the diagnostic ability of a binary 
+    classifier system as its discrimination threshold is varied. 
+
+
+<img src ='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Roc-draft-xkcd-style.svg/800px-Roc-draft-xkcd-style.svg.png' width='500cm'>
+
+<br>
+Now let's start by the first learning algorithm :
+<br>
+
+
 # Logistic regression
 
 
@@ -100,9 +129,9 @@ Now we will use Support Vector Machine algorithm and see how it will act on our 
     it can be separated using a single Line. It is one of the most common kernels to be used. 
     It is mostly used when there are a Large number of features in a particular Data Set.
     
-    2)  the polynomial kernel is a kernel function commonly used with support vector machines and other kernelized models, 
-    that represents the similarity of vectors in a feature space over polynomials of the original variables, 
-    allowing learning of non-linear models
+    2)  the polynomial kernel is a kernel function commonly used with support vector machines and 
+    other kernelized models, that represents the similarity of vectors in a feature space over 
+    polynomials of the original variables, allowing learning of non-linear models.
 
     3) Gaussian RBF(Radial Basis Function) is another popular Kernel method used in SVM models for more. 
     RBF kernel is a function whose value depends on the distance from the origin or from some point. 
@@ -122,33 +151,14 @@ Here are some plots for the three kernels that we've talked about :
 <br><br>
 After that we will compare between them and choose the most accuracte and also we will look at other metrics such as confusion matrix, f1 score and ROC curve.
 
-First let us define those metrics :
 
-    1) Confusion matrix :
-    
-<img src='https://miro.medium.com/max/2102/1*fxiTNIgOyvAombPJx5KGeA.png' width='440cm'>
-
-    2) F1 score :
-    
-<img src = 'https://www.gstatic.com/education/formulas2/-1/en/f1_score.svg' width='440cm'>
-
-TP = number of true positives <br>
-FP = number of false positives <br>
-FN = number of false negatives <br>
-
-    3) The roc curve : A receiver operating characteristic curve, or ROC curve, 
-    is a graphical plot that illustrates the diagnostic ability of a binary 
-    classifier system as its discrimination threshold is varied. 
-
-
-<img src ='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Roc-draft-xkcd-style.svg/800px-Roc-draft-xkcd-style.svg.png' width='500cm'>
 <br>
 
 Now after we train our three models, here are the metrics and the ROC plots :
 
-<img src ='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/compare_kernels.PNG' width='900cm'>
+<img src ='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/compare_kernels.PNG' width='1000cm'>
 
-In the Ipython notebook you will find each part separated + the adobe results, here we gather all the metrics and plots in one section for the purpose of showing results.
+In the Ipython notebook you will find each part separated + the above results, here we gather all the metrics and plots in one section for the purpose of showing results.
 
  
 # Comparision
