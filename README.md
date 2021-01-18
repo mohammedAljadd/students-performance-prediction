@@ -88,8 +88,59 @@ Now before training our model we have to process our data :
 
 # SVM
 
+Now we will use Support Vector Machine algorithm and see how it will act on our data. But, let's define what is svm algorithm
+
+    In machine learning, support-vector machines are supervised learning models with associated learning algorithms 
+    that analyze data for classification and regression analysis
+
+ It uses a technique called the kernel trick to transform your data and then based on these transformations it finds an optimal boundary between the possible outputs. We will use three kernel : Linear, polynomial and gaussian kernel.
+
+    1) Linear kernel : Linear Kernel is used when the data is Linearly separable, that is, it can be separated using a 
+    single Line. It is one of the most common kernels to be used. It is mostly used when there are a Large number of 
+    features in a particular Data Set.
+    
+    2)  the polynomial kernel is a kernel function commonly used with support vector machines and other kernelized models, 
+    that represents the similarity of vectors in a feature space over polynomials of the original variables, 
+    allowing learning of non-linear models
+
+    3) Gaussian RBF(Radial Basis Function) is another popular Kernel method used in SVM models for more. 
+    RBF kernel is a function whose value depends on the distance from the origin or from some point. 
+    Gaussian Kernel is of the following format:
+    
+<img src='https://miro.medium.com/max/336/1*jTU-kuAWMnMMYwBWj8mTVw.png' width='360cm'>
+
+    Using the distance in the original space we calculate the dot product (similarity) of X1 & X2.
+    Note: similarity is the angular distance between two points.
 
 
+Here are some plots for the three kernels that we've talked about :
+
+
+    
+<img src='https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_svc_0011.png' width='460cm'>
+<br><br>
+After that we will compare between them and choose the most accuracte and also we will look at other metrics such as confusion matrix, f1 score and ROC curve.
+
+First let us define those metrics :
+
+    1) Confusion matrix :
+    
+<img src='https://miro.medium.com/max/2102/1*fxiTNIgOyvAombPJx5KGeA.png' width='440cm'>
+
+    2) F1 score :
+    
+<img src = 'https://www.gstatic.com/education/formulas2/-1/en/f1_score.svg' width='440cm'>
+
+TP = number of true positives <br>
+FP = number of false positives <br>
+FN = number of false negatives <br>
+
+    3) The roc curve : A receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates 
+    the diagnostic ability of a binary classifier system as its discrimination threshold is varied. 
+
+
+<img src ='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Roc-draft-xkcd-style.svg/800px-Roc-draft-xkcd-style.svg.png' width='500cm'>
+    
 # Comparision
 
 
