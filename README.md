@@ -37,8 +37,8 @@ National institute of posts and telecommunications <a href="http://www.inpt.ac.m
 As already mentioned, with the help of the old students records, we can came up with a model that can let us help students improve their performance in exams by predicting the student success. So, it is obvious it's a problem of classification , and we will classify a student based on his given informations, and we will also use diffrent classifiers such as KNN or SVM classifier and compare between them. Many factors affect a student performance in exams like famiily problems or alcohol consumption, and by using our skills in machine learning we want to : </br></br>
 
 	    1) predict whether a student will pass his final exam or not.
-	    2) came up with the best classifier that is more accurate and avoid overfitting and underfitting by using 
-	    simple techniques.
+	    2) came up with the best classifier that is more accurate and avoid 
+	    overfitting and underfitting by using simple techniques.
 	    3) know what the most factors affect a student performance.
 
 So, teachers and parents will be able to intervene before students reach the exam stage and solve the problems.
@@ -50,8 +50,8 @@ Now before training our model we have to process our data :
 
 1) We have to map each string to a numerical value so that it can be used for model training.
        
-       Let's take an example to make this clear : The mother job column contain five values : 'teacher', 'health',
-       'services', 'at_home' and 'other'.
+       Let's take an example to make this clear : The mother job column contain five values : 'teacher', 
+       'health','services', 'at_home' and 'other'.
       
        Our job then is to map each of these string to numerical values, and this is how it's done :
        df['Mjob'] = df['Mjob'].map({'teacher': 0, 'health': 1, 'services': 2, 'at_home': 3, 'other': 4})
@@ -61,12 +61,12 @@ Now before training our model we have to process our data :
         
 2) We have to perform feature scaling :
 
-        	Feature scaling is a method used to normalize the range of independent variables or features of data. 
-        	In data processing, it is also known as data normalization and is generally performed during 
-		the data preprocessing step.
+        	Feature scaling is a method used to normalize the range of independent variables 
+		or features of data. In data processing, it is also known as data normalization 
+		and is generally performed during the data preprocessing step.
         
-		This will allow our learning algorithms to converge very quickly. The operation requires to take each column, 
-		let's say 'col', and replace it by :
+		This will allow our learning algorithms to converge very quickly. The operation requires 
+		to take each column, let's say 'col', and replace it by :
         
     ![\Large](https://latex.codecogs.com/svg.latex?\Large&space;col=\frac{col-mean(col)}{max(col)})
     
@@ -90,14 +90,15 @@ Now before training our model we have to process our data :
 
 Now we will use Support Vector Machine algorithm and see how it will act on our data. But, let's define what is svm algorithm
 
-    In machine learning, support-vector machines are supervised learning models with associated learning algorithms 
-    that analyze data for classification and regression analysis
+    In machine learning, support-vector machines are supervised learning models with 
+    associated learning algorithms that analyze data for classification 
+    and regression analysis.
 
  It uses a technique called the kernel trick to transform your data and then based on these transformations it finds an optimal boundary between the possible outputs. We will use three kernel : Linear, polynomial and gaussian kernel.
 
-    1) Linear kernel : Linear Kernel is used when the data is Linearly separable, that is, it can be separated using a 
-    single Line. It is one of the most common kernels to be used. It is mostly used when there are a Large number of 
-    features in a particular Data Set.
+    1) Linear kernel : Linear Kernel is used when the data is Linearly separable, that is, 
+    it can be separated using a single Line. It is one of the most common kernels to be used. 
+    It is mostly used when there are a Large number of features in a particular Data Set.
     
     2)  the polynomial kernel is a kernel function commonly used with support vector machines and other kernelized models, 
     that represents the similarity of vectors in a feature space over polynomials of the original variables, 
@@ -135,8 +136,9 @@ TP = number of true positives <br>
 FP = number of false positives <br>
 FN = number of false negatives <br>
 
-    3) The roc curve : A receiver operating characteristic curve, or ROC curve, is a graphical plot that illustrates 
-    the diagnostic ability of a binary classifier system as its discrimination threshold is varied. 
+    3) The roc curve : A receiver operating characteristic curve, or ROC curve, 
+    is a graphical plot that illustrates the diagnostic ability of a binary 
+    classifier system as its discrimination threshold is varied. 
 
 
 <img src ='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Roc-draft-xkcd-style.svg/800px-Roc-draft-xkcd-style.svg.png' width='500cm'>
