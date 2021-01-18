@@ -142,7 +142,15 @@ FN = number of false negatives <br>
 
 
 <img src ='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Roc-draft-xkcd-style.svg/800px-Roc-draft-xkcd-style.svg.png' width='500cm'>
-    
+<br>
+
+Now after we train our three models, here are the metrics and the ROC plots :
+
+<img src ='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/compare_kernels.PNG' width='900cm'>
+
+In the Ipython notebook you will find each part separated + the adobe results, here we gather all the metrics and plots in one section for the purpose of showing results.
+
+ 
 # Comparision
 
 
