@@ -149,7 +149,90 @@ Here are some plots for the three kernels that we've talked about :
     
 <img src='https://scikit-learn.org/stable/_images/sphx_glr_plot_iris_svc_0011.png' width='460cm'>
 <br><br>
-After that we will compare between them and choose the most accuracte and also we will look at other metrics such as confusion matrix, f1 score and ROC curve.
+
+
+Now after we train our three models, here are the metrics and the ROC plots for each svm kernel :
+
+But let's talk about some parameters that are using in SVM :
+
+1) <img src="https://latex.codecogs.com/svg.latex?\Large&space;C" /> : The C parameter tells the SVM optimization how much you want 
+to avoid misclassifying each training example.
+
+2) <img src="https://latex.codecogs.com/svg.latex?\Large&space;D" /> : It's basically the degree of the polynomial used to find the hyperplane to split the data.
+
+3) <img src="https://latex.codecogs.com/svg.latex?\Large&space;\gamma" /> : Intuitively, the gamma parameter defines how far the influence of a single training example reaches, with low values meaning ‘far’ and high values meaning ‘close’. The gamma parameters can be seen as the inverse of the radius of influence of samples selected by the model as support vectors.
+
+warning: We will use diffrent values of those svm parameters using a for loop and choose the ones that minimize the cost <img src="https://latex.codecogs.com/svg.latex?\Large&space;J_{val}" /> on the cross validation set.
+
+So here is how it will be done:
+
+Repeat{<br> <br>
+        - choose c <br>
+        - Train the svm model <br>
+        - calculate <img src="https://latex.codecogs.com/svg.latex?\Large&space;J_{val}" /> <br>
+}
+
+After that we will be able to get the optimal value of c.
+
+**Our results :**
+
+    1) Linear kernel : svm.svc(C)
+
+After training our first svm model, here are our results :   
+
+| Metric            | Value         |
+| -------------     |:-------------:|
+| training time     | 16ms          |
+| accuracy          | 82.8125  %    |
+| f1 score          | 0.75          |
+| confusion matrix  |[9 10]<br>[1 44]|
+
+
+ROC Curve :
+
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/rocL.PNG' width='450cm'>
+
+
+    2) Polynomial kernel : svm.svc(C,d)
+    
+Here we will use diffrent values for both C and d. For example if we have 2 values for C and 3 values for d then we have 2x3 possibilities.
+
+After training our second svm model, here are our results :   
+
+| Metric            | Value         |
+| -------------     |:-------------:|
+| training time     | 0ms          |
+| accuracy          | 73.4375 %    |
+| f1 score          |  0.6529505582137161  |
+| confusion matrix  |[9 11]<br>[6 39]|
+
+
+ROC Curve :
+
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/rocP.PNG' width='450cm'>
+
+
+
+    3) Gaussian kernel : svm.svc(C,gamma)
+    
+Here we will use diffrent values for both C and gamma.
+
+After training our last svm model, here are our results :   
+
+| Metric            | Value         |
+| -------------     |:-------------:|
+| training time     | 16ms          |
+| accuracy          | 78.125 %    |
+| f1 score          |  0.6799999999999999  |
+| confusion matrix  |[7 12]<br>[2 43]|
+
+
+ROC Curve :
+
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/rocG.PNG' width='450cm'>
+
+
+Now, after training our three svm models, it is better to group all the results so it can be easy to compare between them :
 
 
 <br>
