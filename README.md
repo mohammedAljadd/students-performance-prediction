@@ -241,7 +241,9 @@ Now after we train our three models, here are the metrics and the ROC plots :
 
 <img src ='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/compare_kernels.PNG' width='1000cm'>
 
-In the Ipython notebook you will find each part separated + the above results, here we gather all the metrics and plots in one section for the purpose of showing results.
+As you can see the training times are soo small thanks to feature scaling. As you can also notice, the best svm model the one that used the linear kernel. So let's show the results of this linear kernel svm model again :
+
+
 
  
 # Comparision
