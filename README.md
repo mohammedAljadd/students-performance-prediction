@@ -162,7 +162,7 @@ to avoid misclassifying each training example.
 
 3) <img src="https://latex.codecogs.com/svg.latex?\Large&space;\gamma" /> : Intuitively, the gamma parameter defines how far the influence of a single training example reaches, with low values meaning ‘far’ and high values meaning ‘close’. The gamma parameters can be seen as the inverse of the radius of influence of samples selected by the model as support vectors.
 
-warning: We will use diffrent values of those svm parameters using a for loop and choose the ones that minimize the cost <img src="https://latex.codecogs.com/svg.latex?\Large&space;J_{val}" /> on the cross validation set.
+:warning: We will use diffrent values of those svm parameters using a for loop and choose the ones that minimize the cost <img src="https://latex.codecogs.com/svg.latex?\Large&space;J_{val}" /> on the cross validation set.
 
 So here is how it will be done:
 
