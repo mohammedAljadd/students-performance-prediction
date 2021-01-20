@@ -197,7 +197,7 @@ After training our first svm model, here are our results :
 
 ROC Curve :
 
-<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/rocL.PNG' width='450cm'>
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/rocL.PNG' width='450cm'>
 
 
     2) Polynomial kernel : svm.svc(C,d)
@@ -217,7 +217,7 @@ After training our second svm model, here are our results :
 
 ROC Curve :
 
-<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/rocP.PNG' width='450cm'>
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/rocP.PNG' width='450cm'>
 
 
 
@@ -238,7 +238,7 @@ After training our last svm model, here are our results :
 
 ROC Curve :
 
-<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/rocG.PNG' width='450cm'>
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/rocG.PNG' width='450cm'>
 
 
 Now, after training our three svm models, it is better to group all the results so it can be easy to compare between them :
@@ -264,7 +264,7 @@ This table contains all metrics :
 
 
 
-<img src ='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/compare_kernels.PNG' width='700cm'>
+<img src ='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/compare_kernels.PNG' width='700cm'>
 
 As you can see the training times are soo small thanks to feature scaling. As you can also notice, the best svm model the one that used the linear kernel. So let's show the results of this linear kernel svm model again :
 
@@ -277,7 +277,7 @@ As you can see the training times are soo small thanks to feature scaling. As yo
 As you can see the accuracy is pretty good for our problem, and the f1 score has a good value. The value of the area under the roc curve is approximatly 0.73 which is good.
 The roc curve :
 
-<img src ='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/rocLF.PNG' width='450cm'>
+<img src ='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/rocLF.PNG' width='450cm'>
 
 
 
