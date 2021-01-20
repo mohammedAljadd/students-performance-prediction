@@ -248,14 +248,31 @@ Now, after training our three svm models, it is better to group all the results 
 
 Now after we train our three models, here are the metrics and the ROC plots :
 
-<img src ='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/compare_kernels.PNG' width='1000cm'>
+
+This table contains all metrics :
+
+
+|<span style="color:red">Metric | <span style="color:red">Linear kernel |<span style="color:red">polynomial kernel  |<span style="color:red">gaussian kernel|
+| ----------------|---------------|-------------------|:-------------:|
+| training time   |   82.8125     |     73.4375       |      78.125   |
+| accuracy %      | 82.8125       |   73.4375         |    78.125     |
+| confusion matrix|[9 10]<br>[1 44]| [8 11]<br>[6 39] |[7 12]<br>[2 43]|
+| f1 score        |  0.75         |        0.65       |    0.68       |
+| roc_auc_score   |  0.73         |      0.64         |      0.66     |
+
+
+
+
+
+<img src ='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/compare_kernels.PNG' width='700cm'>
 
 As you can see the training times are soo small thanks to feature scaling. As you can also notice, the best svm model the one that used the linear kernel. So let's show the results of this linear kernel svm model again :
 
-the training time : 16ms <br>
-the accuracy : 83.0 % <br>
-the f1 score : 0.75 <br>
-The roc_auc_score is : 0.7257309941520469 <br>
+**The training time** : <b><span style="color:red">16ms </span><br></b>
+**The accuracy** : <b><span style="color:red">83.0 % </span><br></b>
+**The f1 score** : <b><span style="color:red">0.75 </span><br></b>
+**The roc_auc_score** : <b><span style="color:red">0.73</span><br></b>
+
 
 As you can see the accuracy is pretty good for our problem, and the f1 score has a good value. The value of the area under the roc curve is approximatly 0.73 which is good.
 The roc curve :
