@@ -248,6 +248,16 @@ Now after we train our three models, here are the metrics and the ROC plots :
 
 As you can see the training times are soo small thanks to feature scaling. As you can also notice, the best svm model the one that used the linear kernel. So let's show the results of this linear kernel svm model again :
 
+the training : 16ms
+the accuracy : 83.0 %
+the f1 score : 0.75
+The roc_auc_score is : 0.7257309941520469
+
+As you can see the accuracy is pretty good for our problem, and the f1 score has a good value. The value of the area under the roc curve is approximatly 0.73 which is good.
+The roc curve :
+
+<img src ='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/rocLF.PNG' width='450cm'>
+
 
 
  
