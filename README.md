@@ -113,6 +113,7 @@ FN = number of false negatives <br>
 Now let's start by the first learning algorithm :
 <br>
 
+    4) ROC score : it's simply the value of the area under the roc curve. The best value is 1 because the area of 1x1 square is 1.
 
 # Logistic regression
 
@@ -191,6 +192,7 @@ After training our first svm model, here are our results :
 | accuracy          | 82.8125  %    |
 | f1 score          | 0.75          |
 | confusion matrix  |[9 10]<br>[1 44]|
+|The roc_auc_score  |0.7257309941520469	|
 
 
 ROC Curve :
@@ -210,6 +212,7 @@ After training our second svm model, here are our results :
 | accuracy          | 73.4375 %    |
 | f1 score          |  0.6529505582137161  |
 | confusion matrix  |[9 11]<br>[6 39]|
+|The roc_auc_score  |0.643859649122807	|
 
 
 ROC Curve :
@@ -230,6 +233,7 @@ After training our last svm model, here are our results :
 | accuracy          | 78.125 %    |
 | f1 score          |  0.6799999999999999  |
 | confusion matrix  |[7 12]<br>[2 43]|
+|The roc_auc_score  |0.6619883040935672	|
 
 
 ROC Curve :
