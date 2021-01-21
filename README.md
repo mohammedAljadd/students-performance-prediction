@@ -89,9 +89,12 @@ Now before training our model we have to process our data :
    This discipline will give us some insights into our data and help us understand the dataset by placing it in a visual context using python libraries such as: matplotlib and seaborn.
 
    There are so many ways to visualize a dataset. In this project we chose to: 
+   
       1- Plot distribution histograms so that we can see the number of samples that occur in each specific category.
       E.g.  Internet accessibility at home distribution shows that our dataset consists of more than 300 students with home internet accessibility, while there are about 50 students who have no access to the internet at home.
+      
       2- Plot “Boxplots” to see to see how the students status is distributed according to each variable.
+      
       3- Plot the correlation output that should list all the features and their correlations to the target variable. So that we have an idea about the most impactful elements on the students status. 
 
 
