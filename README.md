@@ -138,7 +138,7 @@ Now let's start by the first learning algorithm :
 # KNN
  **1)Introduction to knn :**
   
-  K-Nearest Neighbour is one of the simplest Machine Learning algorithms based on Supervised Learning technique.Its assumes the similarity between the new case/data and       available cases and put the new case into the category that is most similar to the available categories.K-NN algorithm stores all the available data and classifies a new data point based on the similarity. This means when new data appears then it can be easily classified into a well suite category by using K- NN algorithm.
+  K-Nearest Neighbour is one of the simplest Machine Learning algorithms based on Supervised Learning technique.Its assumes the similarity between the new case data and       available cases and put the new case into the category that is most similar to the available categories.K-NN algorithm stores all the available data and classifies a new data point based on the similarity. This means when new data appears then it can be easily classified into a well suite category by using K- NN algorithm.
    
   **2)Advantages and Disadvantages of Knn algorithm:**
   
@@ -197,7 +197,15 @@ In this step we will implement knn for our case study by following this step:
    we should look  into previous section
    
      *b) Hyperparameters tuning:
-  after using multiple method for hyperparameters tuning we find the best parameters for the model:  
+  In this step we look after 2 methods to tune the best parameters for our model
+      
+        _First method:     
+   tuning the best k for better test_acquracy and training_acquracy using  k-NN Varying number of neighbors plot
+   
+  <img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/knn1.PNG' width='600cm'>  
+   
+         -Second method:
+  In this method we  search for the  Best parameters(K,metric=Distance) based on time and accuracy
    
  <img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/best_model.PNG' width='600cm'>  
  
