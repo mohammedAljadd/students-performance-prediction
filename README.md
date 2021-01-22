@@ -185,18 +185,18 @@ As we can see the 3 nearest neighbors are from category A, hence this new data p
 In this step we will implement knn for our case study by following this step:
 
 
-    *a) Data preprocessing step
-    *b) Hyperparameters tuning
-    *c) Fitting the K-NN algorithm to the Training set
-    *d) Predicting the test result
-    *e) Test accuracy of the result
+    a) Data preprocessing step
+    b) Hyperparameters tuning
+    c) Fitting the K-NN algorithm to the Training set
+    d) Predicting the test result
+    e) Test accuracy of the result
     
   *Let's look into each step separately      
     
-     *a) Data preprocessing step:
+     a) Data preprocessing step:
    we should look  into previous section
    
-     *b) Hyperparameters tuning:
+     b) Hyperparameters tuning:
   In this step we look after 2 methods to tune the best parameters for our model
       
         _First method:     
@@ -207,26 +207,26 @@ In this step we will implement knn for our case study by following this step:
          -Second method:
   In this method we  search for the  Best parameters(K,metric=Distance) based on time and accuracy
    
- <img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/best_model.PNG' width='600cm'>  
+ <img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/best_model.PNG' width='650cm'>  
  
-    *c,d) Fitting and predicting
+    c,d) Fitting and predicting
     
 *After finding the best parameters with high accuracy we fit the model to training_set and predicting the result using test_set
 
-      *e) Test accuracy of the result
+      e) Test accuracy of the result
 *After prediction we will evaluate the model using various methods:
   
-    **1) Confusion_matrix:**
+    1) Confusion_matrix:
   
-  <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/confusion_matrix.PNG' width='600cm'>  
+  <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/confusion_matrix.PNG' width='650cm'>  
 
-    **2) Classification_report :**
+    2) Classification_report :
   
-  <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/classification_report.PNG' width='600cm'>  
+  <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/classification_report.PNG' width='650cm'>  
    
-    **3) Ploting Roc curv:**
+    3) Ploting Roc curv:
  
- <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/roc_curv.PNG' width='600cm'>  
+ <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/roc_curv.PNG' width='650cm'>  
 
 
 
