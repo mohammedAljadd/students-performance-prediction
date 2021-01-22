@@ -136,6 +136,102 @@ Now let's start by the first learning algorithm :
 
 
 # KNN
+ **1)Introduction to knn :**
+  
+  K-Nearest Neighbour is one of the simplest Machine Learning algorithms based on Supervised Learning technique.Its assumes the similarity between the new case/data and       available cases and put the new case into the category that is most similar to the available categories.K-NN algorithm stores all the available data and classifies a new data point based on the similarity. This means when new data appears then it can be easily classified into a well suite category by using K- NN algorithm.
+   
+  **2)Advantages and Disadvantages of Knn algorithm:**
+  
+     2.1Advantages:
+     
+   -It is simple to implement.
+   
+   -It is robust to the noisy training data
+   
+   -It can be more effective if the training data is large.
+   
+     2.2Disadvantages
+     
+   -Always needs to determine the value of K which may be complex some time.
+   
+   -The computation cost is high because of calculating the distance between all training set
+    
+   **3)How does it work :**
+   
+    The K-NN working can be explained on the basis of the below Algorithm:
+
+ **Step-1:** Select the number K of the neighbors
+ 
+ **Step-2:** Calculate the Euclidean(or any other type of distances) distance of K number of   neighbors
+ 
+ **Step-3:** Among the k nearest neighbors, count the number of the data points in each category.
+ 
+ **Step-4:** Assign the new data points to that category for which the number of the neighbor is maximum.
+ 
+Suppose we have a new data point and we need to put it in the required category. Consider the below image: 
+
+   <img src = 'https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning3.png' width='400cm'>
+  
+    -Firstly, we will choose the number of neighbors, so we will choose the k=5.
+    -Next, we will calculate the Euclidean distance between the data points
+    -By calculating the Euclidean distance we got the nearest neighbors, as three nearest neighbors in category A and two nearest neighbors in category B. Consider the below     image:
+
+   <img src = 'https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning5.png' width='400cm'>
+   
+As we can see the 3 nearest neighbors are from category A, hence this new data point must belong to category A.
+
+  **4)Python implementation of the KNN algorithm**
+  
+In this step we will implement knn for our case study by following this step:
+
+
+    *a) Data preprocessing step
+    *b) Hyperparameters tuning
+    *c) Fitting the K-NN algorithm to the Training set
+    *d) Predicting the test result
+    *e) Test accuracy of the result
+    
+  *Let's look into each step separately      
+    
+     *a) Data preprocessing step:
+   we should look  into previous section
+   
+     *b) Hyperparameters tuning:
+  after using multiple method for hyperparameters tuning we find the best parameters for the model:  
+   
+ <img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/best_model.PNG' width='600cm'>  
+ 
+    *c,d) Fitting and predicting
+    
+*After finding the best parameters with high accuracy we fit the model to training_set and predicting the result using test_set
+
+      *e) Test accuracy of the result
+*After prediction we will evaluate the model using various methods:
+  
+    **1) Confusion_matrix:**
+  
+  <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/confusion_matrix.PNG' width='600cm'>  
+
+    **2) Classification_report :**
+  
+  <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/classification_report.PNG' width='600cm'>  
+   
+    **3) Ploting Roc curv:**
+ 
+ <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/roc_curv.PNG' width='600cm'>  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # SVM
