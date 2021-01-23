@@ -130,7 +130,8 @@ FN = number of false negatives <br>
 Now let's start by the first learning algorithm :
 <br>
 
-    4) ROC score : it's simply the value of the area under the roc curve. The best value is 1 because the area of 1x1 square is 1.
+    4) ROC score : it's simply the value of the area under the roc curve. 
+    The best value is 1 because the area of 1x1 square is 1.
 
 # Logistic regression
 
@@ -174,7 +175,9 @@ Suppose we have a new data point and we need to put it in the required category.
   
     -Firstly, we will choose the number of neighbors, so we will choose the k=5.
     -Next, we will calculate the Euclidean distance between the data points
-    -By calculating the Euclidean distance we got the nearest neighbors, as three nearest neighbors in category A and two nearest neighbors in category B. Consider the below     image:
+    -By calculating the Euclidean distance we got the nearest neighbors, 
+    as three nearest neighbors in category A and two nearest neighbors in category B. 
+    Consider the image below:
 
    <img src = 'https://static.javatpoint.com/tutorial/machine-learning/images/k-nearest-neighbor-algorithm-for-machine-learning5.png' width='400cm'>
    
