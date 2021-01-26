@@ -459,29 +459,38 @@ Factors leading students to failure :<br>
 - 1) For **<span style='color:red'>positive impact</span>**, it seems that the factors helping students succeed: <br>
     
    - **Father's education** : if the father has a higher education, he will help his children in their studies so that they do not struggle for a long time with their problems.
+   <img src='https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/9/23/1411490436474/Father-and-children-014.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=bbd96dbd423cc4d9f3caa0a2ec075c54' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
      
    - **Guardian** : The father can really take control of the student's problems as his mother take care of them at home and give them tenderness and the emotional support.
+   <img src='https://blog.ecr4kids.com/wp-content/uploads/2016/06/ECR4Kids_Blog_Fathers_BLOG-BANNER-872x400.jpg' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
     
    - **Wants to take higher education** : Students who take higher education seems to be motivated and having goals to achieve.
+   <img src='https://www.expatica.com/app/uploads/2018/11/Higher-Education-1200x675.jpg' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
     
    - **Study time** : This is an import thing to keep in mind, students need to spend many hours studying, but this depends on many things such as the subject, timetable ...
+   <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGV3b-SMhZ0R33fNsICpb5aADEfO3QakrNpA&usqp=CAU' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
     
    - **Father's job** : If the father has a good career, then of course he will fulfill the needs of their children.
+   <img src='https://images.assetsdelivery.com/compings_v2/bbtreesubmission/bbtreesubmission1708/bbtreesubmission170804467.jpg' width='300cm' height='180cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
     
 <br><br>
 - 2) For **<span style='color:red'>negative impact</span>**, it seems that the factors affecting students are: <br>
     
     - **Age** : It is difficult to judge that the age is a negative factor, we do not have a big dataset to make this kind of judgment or simply our classifier isn't effective that much.
+    <img src='https://www.twincities.com/wp-content/uploads/2019/05/Kindergarten-005.jpg' width='340cm' height='200cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
     
     - **Health** : this is also can not be taken into consideration.
+    <img src='https://lh3.googleusercontent.com/proxy/mP_cymaPSaagu4RZMxrm3xmJ1g-Ik7dtz5-t1vm0q5UBHkUng8-tSCl7zuvECwfOrZUV-ESds3NUNxPt8b9Y09R5cl79grptEtGAzE3e61HgVTTlUxjhRUqzfQrlA5ydAA3JxMgwMzV-' width='340cm' height='170cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
     
     - **Going out with friends** : going out with friends helps relieve stress, but sometimes if the students spend a lot of time outside the home this will definitely affect their studies.
+    <img src='https://www.liveabout.com/thmb/qxiVyxFLcbscJPskEMjaII6xTVE=/1116x837/smart/filters:no_upscale()/GettyImages-476806317-569680f55f9b58eba49dc8b5.jpg' width='340cm' height='190cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
     
     - **Absences** : Students who missed classes will find it difficult to take the exams.
+    <img src='https://education.jhu.edu/wp-content/uploads/2018/09/Absentee_WEB.jpg' width='340cm' height='170cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
     
     - **Failures** : Having a lot of features is an indication of a lack of good exam preparations.
     
-
+    <img src='https://s.wsj.net/public/resources/images/OB-TT492_Review_P_20120713172350.jpg' width='340cm' height='170cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
 
     
 <h6>Small conclusion on factors extraction:</h6>
