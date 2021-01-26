@@ -432,7 +432,63 @@ The roc curve :
 
 <h4>4) Factor extaction :</h4>
 
+After validating our model, lets extract the positive and negative factors, in the iPython notebook we explained very well how we managed to do that :
 
+After calling the appropriate function, we got:
+
+---------------------------------------------------------------------
+Factors helping students succeed :<br>
+    
+    father's education 
+    guardian
+    wants to take higher education
+    studytime
+    father's job
+---------------------------------------------------------------------
+Factors leading students to failure :<br>
+    
+    age
+    health
+    going out with friends
+    absences
+    failures
+    
+
+**Conclusion :**
+
+- 1) For **<span style='color:red'>positive impact</span>**, it seems that the factors helping students succeed: <br>
+    
+   - **Father's education** : if the father has a higher education, he will help his children in their studies so that they do not struggle for a long time with their problems.
+     
+   - **Guardian** : The father can really take control of the student's problems as his mother take care of them at home and give them tenderness and the emotional support.
+    
+   - **Wants to take higher education** : Students who take higher education seems to be motivated and having goals to achieve.
+    
+   - **Study time** : This is an import thing to keep in mind, students need to spend many hours studying, but this depends on many things such as the subject, timetable ...
+    
+   - **Father's job** : If the father has a good career, then of course he will fulfill the needs of their children.
+    
+<br><br>
+- 2) For **<span style='color:red'>negative impact</span>**, it seems that the factors affecting students are: <br>
+    
+    - **Age** : It is difficult to judge that the age is a negative factor, we do not have a big dataset to make this kind of judgment or simply our classifier isn't effective that much.
+    
+    - **Health** : this is also can not be taken into consideration.
+    
+    - **Going out with friends** : going out with friends helps relieve stress, but sometimes if the students spend a lot of time outside the home this will definitely affect their studies.
+    
+    - **Absences** : Students who missed classes will find it difficult to take the exams.
+    
+    - **Failures** : Having a lot of features is an indication of a lack of good exam preparations.
+    
+
+
+    
+<h6>Small conclusion on factors extraction:</h6>
+
+- For positive impacts the classifier managed to give reasonable factors, 
+but if we see the negative factors, two of them seems to be not right,
+**Age** and **Health**, I think those isn't quit good factors to take into consideration, and maybe it is a problem of lack of informations or the classifier isn't effective tha much, but many times, datasets that has not much informations will give some non reasonable results, but if we see other factors it is indeed good resluts.
 
 
  
