@@ -321,7 +321,7 @@ After training our first svm model, here are our results :
 
 Confusion matrix :
 
-<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confL.PNG' width='450cm'>
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confL.png' width='450cm'>
 
 ROC Curve :
 
@@ -344,7 +344,7 @@ After training our second svm model, here are our results :
 
 Confusion matrix :
 
-<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confP.PNG' width='450cm'>
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confP.png' width='450cm'>
 
 ROC Curve :
 
@@ -368,7 +368,7 @@ After training our last svm model, here are our results :
 
 Confusion matrix :
 
-<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confG.PNG' width='450cm'>
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confG.png' width='450cm'>
 
 ROC Curve :
 
