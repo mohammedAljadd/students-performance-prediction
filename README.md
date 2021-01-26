@@ -314,12 +314,14 @@ After training our first svm model, here are our results :
 
 | Metric            | Value         |
 | -------------     |:-------------:|
-| training time     | 16ms          |
-| accuracy          | 82.8125  %    |
-| f1 score          | 0.75          |
-| confusion matrix  |[9 10]<br>[1 44]|
-|The roc_auc_score  |0.7257309941520469	|
+| training time     | 10ms          |
+| accuracy          | 84.0   %    |
+| f1 score          | 0.82          |
+|The roc_auc_score  |0.8	|
 
+Confusion matrix :
+
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confL.PNG' width='450cm'>
 
 ROC Curve :
 
@@ -334,12 +336,15 @@ After training our second svm model, here are our results :
 
 | Metric            | Value         |
 | -------------     |:-------------:|
-| training time     | 0ms          |
-| accuracy          | 73.4375 %    |
-| f1 score          |  0.6529505582137161  |
-| confusion matrix  |[9 11]<br>[6 39]|
-|The roc_auc_score  |0.643859649122807	|
+| training time     | 7ms          |
+| accuracy          | 78.00 %    |
+| f1 score          |  0.74  |
+|The roc_auc_score  |0.73	|
 
+
+Confusion matrix :
+
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confP.PNG' width='450cm'>
 
 ROC Curve :
 
@@ -356,11 +361,14 @@ After training our last svm model, here are our results :
 | Metric            | Value         |
 | -------------     |:-------------:|
 | training time     | 16ms          |
-| accuracy          | 78.125 %    |
-| f1 score          |  0.6799999999999999  |
-| confusion matrix  |[7 12]<br>[2 43]|
-|The roc_auc_score  |0.6619883040935672	|
+| accuracy          | 83.0 %    |
+| f1 score          |   0.77  |
+|The roc_auc_score  |0.74	|
 
+
+Confusion matrix :
+
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confG.PNG' width='450cm'>
 
 ROC Curve :
 
