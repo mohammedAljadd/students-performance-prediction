@@ -306,7 +306,9 @@ Repeat{<br> <br>
 
 After that we will be able to get the optimal value of c.
 
-**Our results :**
+
+<h4>1) Our results :</h4>
+
 
     1) Linear kernel : svm.svc(C)
 
@@ -321,7 +323,7 @@ After training our first svm model, here are our results :
 
 Confusion matrix :
 
-<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confL.PNG' width='450cm'>
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confL.png' width='450cm'>
 
 ROC Curve :
 
@@ -344,7 +346,7 @@ After training our second svm model, here are our results :
 
 Confusion matrix :
 
-<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confP.PNG' width='450cm'>
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confP.png' width='450cm'>
 
 ROC Curve :
 
@@ -368,11 +370,16 @@ After training our last svm model, here are our results :
 
 Confusion matrix :
 
-<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confG.PNG' width='450cm'>
+<img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/confG.png' width='450cm'>
 
 ROC Curve :
 
 <img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/rocG.PNG' width='450cm'>
+
+
+
+
+<h4>2) Comparison :</h4>
 
 
 Now, after training our three svm models, it is better to group all the results so it can be easy to compare between them :
@@ -388,11 +395,11 @@ This table contains all metrics :
 
 |<span style="color:red">Metric | <span style="color:red">Linear kernel |<span style="color:red">polynomial kernel  |<span style="color:red">gaussian kernel|
 | ----------------|---------------|-------------------|:-------------:|
-| training time   |   82.8125     |     73.4375       |      78.125   |
-| accuracy %      | 82.8125       |   73.4375         |    78.125     |
-| confusion matrix|[9 10]<br>[1 44]| [8 11]<br>[6 39] |[7 12]<br>[2 43]|
-| f1 score        |  0.75         |        0.65       |    0.68       |
-| roc_auc_score   |  0.73         |      0.64         |      0.66     |
+| training time   |   11ms   	  |     7ms	      |      3ms      |
+| accuracy %      | 84.375       |   78.125          |    82.8125     |
+| confusion matrix|[15 8]<br>[2 39| [12 8]<br>[6 38] |[10 11]<br>[0 43]|
+| f1 score        |  0.82         |        0.74       |    0.77       |
+| roc_auc_score   |  0.80         |      0.73         |      0.74     |
 
 
 
@@ -400,19 +407,88 @@ This table contains all metrics :
 
 <img src ='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/compare_kernels.PNG' width='700cm'>
 
+
+<h4>3) The more accurate svm classifier :</h4>
+
+
 As you can see the training times are soo small thanks to feature scaling. As you can also notice, the best svm model the one that used the linear kernel. So let's show the results of this linear kernel svm model again :
 
-**The training time** : <b><span style="color:red">16ms </span><br></b>
-**The accuracy** : <b><span style="color:red">83.0 % </span><br></b>
-**The f1 score** : <b><span style="color:red">0.75 </span><br></b>
-**The roc_auc_score** : <b><span style="color:red">0.73</span><br></b>
+**The training time** : <b><span style="color:red">11ms </span><br></b>
+**The accuracy** : <b><span style="color:red">84.375 % </span><br></b>
+**The f1 score** : <b><span style="color:red">0.82 </span><br></b>
+**The roc_auc_score** : <b><span style="color:red">0.8</span><br></b>
 
-
-As you can see the accuracy is pretty good for our problem, and the f1 score has a good value. The value of the area under the roc curve is approximatly 0.73 which is good.
 The roc curve :
 
 <img src ='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/SVM.plot/rocLF.PNG' width='450cm'>
 
+
+	As you can see the accuracy is pretty good for our problem, but we need to see also 
+	that the f1 score has a high value so the model performed very well on the test set. 
+	Our model is able to generlize for new data and get good prediction. 
+	The value of the area under the roc curve is approximatly 0.80 which is good, 
+	this tells us that the model is capable of distinguishing between the two classes.
+
+
+<h4>4) Factor extaction :</h4>
+
+After validating our model, lets extract the positive and negative factors, in the iPython notebook we explained very well how we managed to do that :
+
+After calling the appropriate function, we got:
+
+---------------------------------------------------------------------
+Factors helping students succeed :<br>
+    
+    father's education 
+    guardian
+    wants to take higher education
+    studytime
+    father's job
+---------------------------------------------------------------------
+Factors leading students to failure :<br>
+    
+    age
+    health
+    going out with friends
+    absences
+    failures
+    
+
+**Conclusion :**
+
+- 1) For **<span style='color:red'>positive impact</span>**, it seems that the factors helping students succeed: <br>
+    
+   - **Father's education** : if the father has a higher education, he will help his children in their studies so that they do not struggle for a long time with their problems.
+     
+   - **Guardian** : The father can really take control of the student's problems as his mother take care of them at home and give them tenderness and the emotional support.
+    
+   - **Wants to take higher education** : Students who take higher education seems to be motivated and having goals to achieve.
+    
+   - **Study time** : This is an import thing to keep in mind, students need to spend many hours studying, but this depends on many things such as the subject, timetable ...
+    
+   - **Father's job** : If the father has a good career, then of course he will fulfill the needs of their children.
+    
+<br><br>
+- 2) For **<span style='color:red'>negative impact</span>**, it seems that the factors affecting students are: <br>
+    
+    - **Age** : It is difficult to judge that the age is a negative factor, we do not have a big dataset to make this kind of judgment or simply our classifier isn't effective that much.
+    
+    - **Health** : this is also can not be taken into consideration.
+    
+    - **Going out with friends** : going out with friends helps relieve stress, but sometimes if the students spend a lot of time outside the home this will definitely affect their studies.
+    
+    - **Absences** : Students who missed classes will find it difficult to take the exams.
+    
+    - **Failures** : Having a lot of features is an indication of a lack of good exam preparations.
+    
+
+
+    
+<h6>Small conclusion on factors extraction:</h6>
+
+- For positive impacts the classifier managed to give reasonable factors, 
+but if we see the negative factors, two of them seems to be not right,
+**Age** and **Health**, I think those isn't quit good factors to take into consideration, and maybe it is a problem of lack of informations or the classifier isn't effective tha much, but many times, datasets that has not much informations will give some non reasonable results, but if we see other factors it is indeed good resluts.
 
 
  
