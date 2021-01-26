@@ -461,7 +461,7 @@ Factors leading students to failure :<br>
    - **Father's education** : if the father has a higher education, he will help his children in their studies so that they do not struggle for a long time with their problems.
    <img src='https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/9/23/1411490436474/Father-and-children-014.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=bbd96dbd423cc4d9f3caa0a2ec075c54' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
      
-   - **Guardian** : The father can really take control of the student's problems as his mother take care of them at home and give them tenderness and the emotional support.
+   - **Guardian** : The father can really take control of the student's problems as his mother take care of them at home and give them tenderness and the emotional support. But also there are some students who do not listen to their mothers.
    <img src='https://blog.ecr4kids.com/wp-content/uploads/2016/06/ECR4Kids_Blog_Fathers_BLOG-BANNER-872x400.jpg' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
     
    - **Wants to take higher education** : Students who take higher education seems to be motivated and having goals to achieve.
@@ -501,7 +501,7 @@ but if we see the negative factors, two of them seems to be not right,
 
 
  
-# Comparision
+# Comparision: <span style='color:red'>Logistic regression, KNN and SVM</span>
 
 
 # Conclusion
