@@ -128,12 +128,15 @@ FN = number of false negatives <br>
 
 <img src ='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Roc-draft-xkcd-style.svg/800px-Roc-draft-xkcd-style.svg.png' width='500cm'>
 
+
+    4) ROC score : it's simply the value of the area under the roc curve. 
+    The best value is 1 because the area of 1x1 square is 1.
+
+
 <br>
 Now let's start by the first learning algorithm :
 <br>
 
-    4) ROC score : it's simply the value of the area under the roc curve. 
-    The best value is 1 because the area of 1x1 square is 1.
 
 # Logistic regression
 
@@ -456,54 +459,58 @@ Factors leading students to failure :<br>
 
 **Conclusion :**
 
-- 1) For **<span style='color:red'>positive impact</span>**, it seems that the factors helping students succeed: <br>
+
+- ****1)**** For **<span style='color:red'>positive impact</span>**, it seems that the factors helping students succeed: <br><br>
     
-   - **Father's education** : if the father has a higher education, he will help his children in their studies so that they do not struggle for a long time with their problems.
-   <img src='https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/9/23/1411490436474/Father-and-children-014.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=bbd96dbd423cc4d9f3caa0a2ec075c54' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
+   - **Father's education** : if the father has a higher education, he will help his children in their studies so that they will not struggle for a long time with their homeworks.
+   <img src='plots\project.cover\father.jpg' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;'>
      
-   - **Guardian** : This instance takes three values: 0,1 and 2 and 2 refers to 'other', we conclude than if the guardian is neither mother nor father than the student has a big chance to succeed, but this just the result of our classifer, it is difficult to judge that.
+   - **Guardian** : This instance takes three values as our convention: 0,1 and 2, 2 refers to 'other', we conclude than if the guardian is neither mother nor father than the student has a big chance to succeed, but this just the result of our classifer, it is difficult to judge that.
     
-   <img src='https://blog.ecr4kids.com/wp-content/uploads/2016/06/ECR4Kids_Blog_Fathers_BLOG-BANNER-872x400.jpg' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
+   <img src='plots\project.cover\guardian.jpg' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;'>
     
-   - **Wants to take higher education** : Students who take higher education seems to be motivated and having goals to achieve.
-   <img src='https://www.expatica.com/app/uploads/2018/11/Higher-Education-1200x675.jpg' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
+   - **Wants to take higher education** : Students who are looking forward to take higher education seems to be motivated and having goals to achieve.
+   <img src='plots\project.cover\higher.jpg' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;'>
     
-   - **Study time** : This is an import thing to keep in mind, students need to spend many hours studying, but this depends on many things such as the subject, timetable ...
-   <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGV3b-SMhZ0R33fNsICpb5aADEfO3QakrNpA&usqp=CAU' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
+   - **Study time** : This is an import thing to keep in mind, students need to spend many hours studying, do not imagine a student succeeding in his exams and yet do not spend one hour at his desk, but it depends on many things such as subject, timetable ...
+   <img src='plots\project.cover\studytime.jpg' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;'>
     
-   - **Father's job** : If the father has a good career, then of course he will fulfill the needs of their children.
-   <img src='https://images.assetsdelivery.com/compings_v2/bbtreesubmission/bbtreesubmission1708/bbtreesubmission170804467.jpg' width='300cm' height='180cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
+   - **Father's job** : If the father has a good career, then of course he will fulfill the needs of their children in terms of paying additive classes, internet ...
+   <img src='plots\project.cover\fatherjob.jpg' width='300cm' height='180cm' style='display: block;margin-left: auto;margin-right: auto;'>
     
 <br><br>
-- 2) For **<span style='color:red'>negative impact</span>**, it seems that the factors affecting students are: <br>
+- ****2)**** For **<span style='color:red'>negative impact</span>**, it seems that the factors affecting students are: <br><br>
     
     - **Age** : It is difficult to judge that the age is a negative factor, we do not have a big dataset to generalize, but we will assume it's a negative factor for the two choosen portuguese schools, so students should go to high school early.
-    <img src='https://www.twincities.com/wp-content/uploads/2019/05/Kindergarten-005.jpg' width='340cm' height='200cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
+    <img src='plots\project.cover\age.jpg' width='340cm' height='200cm' style='display: block;margin-left: auto;margin-right: auto;'>
     
-    - **Health** : This is can not be taken into consideration, we can not say that students having good health fail in the exams, but we will assume again it's a negative factor for the two choosen portuguese schools.
-    <img src='https://lh3.googleusercontent.com/proxy/mP_cymaPSaagu4RZMxrm3xmJ1g-Ik7dtz5-t1vm0q5UBHkUng8-tSCl7zuvECwfOrZUV-ESds3NUNxPt8b9Y09R5cl79grptEtGAzE3e61HgVTTlUxjhRUqzfQrlA5ydAA3JxMgwMzV-' width='340cm' height='170cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
+    - **Health** : This can not be taken into consideration, we cannot say that students having good health fail in the exams, but we will assume again it's a negative factor for the two choosen portuguese schools as our classifier told us.
+    <img src='plots\project.cover\health.jpg' width='340cm' height='170cm' style='display: block;margin-left: auto;margin-right: auto;'>
     
     - **Going out with friends** : going out with friends helps relieve stress, but sometimes if the students spend a lot of time outside the home this will definitely affect their studies.
-    <img src='https://www.liveabout.com/thmb/qxiVyxFLcbscJPskEMjaII6xTVE=/1116x837/smart/filters:no_upscale()/GettyImages-476806317-569680f55f9b58eba49dc8b5.jpg' width='340cm' height='190cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
+    <img src='plots\project.cover\goout.jpg' width='340cm' height='190cm' style='display: block;margin-left: auto;margin-right: auto;'>
     
-    - **Absences** : Students who missed classes will find it difficult to take the exams.
-    <img src='https://education.jhu.edu/wp-content/uploads/2018/09/Absentee_WEB.jpg' width='340cm' height='170cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
+    - **Absences** : Students who missed classes will find it difficult to take the exams, sometimes you find students read a one month course in just one day, imagine how those students prepare for exams. Now, we did not talk about the students having problems letting them do that, we will later on talk abou that.
+    <img src='plots\project.cover\absence.jpg' width='340cm' height='170cm' style='display: block;margin-left: auto;margin-right: auto;'>
     
-    - **Failures** : Having a lot of features is an indication of a lack of good exam preparations.
+    - **Failures** : Having a lot of failures is an indication of a lack of good exam preparations.
     
-    <img src='https://s.wsj.net/public/resources/images/OB-TT492_Review_P_20120713172350.jpg' width='340cm' height='170cm' style='display: block;margin-left: auto;margin-right: auto;width: 50%;'>
+    <img src='plots\project.cover\fail.jpg' width='340cm' height='170cm' style='display: block;margin-left: auto;margin-right: auto;'>
 
     
 <h6>Small conclusion on factors extraction:</h6>
 
-- For positive impacts the classifier managed to give reasonable factors except the guardian factor, 
-but if we see the negative factors, one or maybe two of them seems to be not right,**Age** and **Health**, 
-I think Health isn't quit good factor to take into consideration if we want to generalize, 
-but as we've said we will assume that those are a negative factors, 
-but we can say also it is a problem of lack of informations, 649 instances isn't quit big that much, 
-we will assume that is convenient for the two chosen school, but if we see other factors it is indeed a good results.
+- For positive impacts the classifier managed to give reasonable factors except the guardian factor, but if we see the negative factors, one or maybe two of them seems to be not right, **Age** and **Health**, I think Health isn't quit good factor to take into consideration if we want to generalize, but as we've said before we will assume that those are a negative factors, but we can say also it is a problem of lack of informations, 395 instances isn't quit big that much, we will assume that is convenient for the two chosen school, but if we see other factors it is indeed a good results.
 
 <h6>Advices for students:</h6>
+
+Now, based on extracted factors, let's give some advices for students, parents and school administration : 
+
+   - People should get educated especially men so that they help their children in their studies.
+   - The government should help students whose parents are not rich that much so they get access to internet or  looking forward taking higher education.
+   - Administration should send warnings to parents when students reach the maximum acceptable number of absences before exam period begin.
+   - When students are having a lot of failures, the administration, teachers should search for the problems faced by this students and also get contact with the parents for more informations.
+   - Student should find, at home, a suitable space to study, they need desks or just a small area when they can focus on their studies. Imagine how you would tell this student not to go out with his friends and spend a lot of time and yet their parents shout all the time in front of him. Parents should keep their problems for themselves. These students need love and peace at home. Students will then spend many hours studying at home.
  
 # Comparision: <span style='color:red'>Logistic regression, KNN and SVM</span>
 
