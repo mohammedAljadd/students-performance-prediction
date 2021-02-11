@@ -210,34 +210,39 @@ In this step we will implement knn for our case study by following this step:
         _First method:     
    tuning the best k for better test_acquracy and training_acquracy using  k-NN Varying number of neighbors plot
    
-  <img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/knn1.PNG' width='600cm'>  
+  <img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/knn%20graph.PNG' width='600cm'>  
    
          -Second method:
   In this method we  search for the  Best parameters(K,metric=Distance) based on time and accuracy
    
- <img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/best_model.PNG' width='650cm'>  
+ <img src='https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/best%20metrics.PNG' width='650cm'>  
  
     c,d) Fitting and predicting
     
 *After finding the best parameters with high accuracy we fit the model to training_set and predicting the result using test_set
+
+ <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/meilleur%20model.PNG' width='650cm'>  
+
 
       e) Test accuracy of the result
 *After prediction we will evaluate the model using various methods:
   
     1) Confusion_matrix:
   
-  <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/confusion_matrix.PNG' width='650cm'>  
+  <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/confusion2.PNG' width='650cm'>  
 
     2) Classification_report :
   
-  <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/classification_report.PNG' width='650cm'>  
+  <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/classification%20report.PNG' width='650cm'>  
    
     3) Ploting Roc curv:
  
- <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/roc_curv.PNG' width='650cm'>  
+ <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/roc2.PNG' width='650cm'>  
 
 
-
+  f) Conclusion of the work:
+  
+  <img src = 'https://github.com/mohammedAljadd/Students-performance-and-difficulties-prediction/blob/main/plots/KNN.plot/conclusion.PNG' width='650cm'> 
 
 
 
@@ -516,3 +521,15 @@ Now, based on extracted factors, let's give some advices for students, parents a
 
 
 # Conclusion
+
+Improving the education system is a big problem, as an engineering student we can help achieve this goal by using technologies and study resources like machine learning materials, to come up with an innovative solution to help the student in need, especially students who live in difficult conditions. conditions (demographic, social and educational issues).
+In this project, we came up with the idea of creating a model that predicts the status of students based on different functionalities.
+ Our main challenges were to define the best classification algorithm and identify the most influential factors for the academic status of students to provide them with a summary or valedictorian of the best conditions for students to achieve high academic status and avoid failures.
+  For this project entitled “Prediction of student performance and difficulty” ”, we used several classification methods such as logistic regression, KNN and SVM and we evaluate this model using different metrics like f1 score, roc curve and the confusion matrix and finally we got a winner with SVM with a precision of 80%compared to other algorithm .
+Before taking up our main challenges, there were several steps to take:
+-data processing
+-data visualization
+-Implementation of models
+-comparison of 3 algorithms
+
+   <img src='https://www.google.com/search?q=thank+you+for+your+attention&rlz=1C1PNJJ_frMA933MA933&sxsrf=ALeKk010Chcx5keT8h1C9FshbyPlqYG-pA:1613081448392&tbm=isch&source=iu&ictx=1&fir=OmqVmuVhr7LkIM%252CuJ_UCrRpsn9rgM%252C_&vet=1&usg=AI4_-kTolaOlfYJ4saLHlukoaukZIX3MPw&sa=X&ved=2ahUKEwjCkObV7OLuAhWoUBUIHf3EBf8Q9QF6BAgMEAE#imgrc=OmqVmuVhr7LkIM' width='550cm'>
