@@ -517,9 +517,7 @@ Now, based on extracted factors, let's give some advices for students, parents a
    - When students are having a lot of failures, the administration, teachers should search for the problems faced by this students and also get contact with the parents for more informations.
    - Student should find, at home, a suitable space to study, they need desks or just a small area when they can focus on their studies. Imagine how you would tell this student not to go out with his friends and spend a lot of time and yet their parents shout all the time in front of him. Parents should keep their problems for themselves. These students need love and peace at home. Students will then spend many hours studying at home.
  
-# Comparision: <span style='color:red'>Logistic regression, KNN and SVM</span>
 
-As we said before, the SVM classifier got high performance metrics.
 
 # Conclusion
 
