@@ -519,7 +519,7 @@ Now, based on extracted factors, let's give some advices for students, parents a
  
 # Comparision: <span style='color:red'>Logistic regression, KNN and SVM</span>
 
-	As we said before, the SVM classifier got high performance metrics.
+As we said before, the SVM classifier got high performance metrics.
 
 # Conclusion
 
