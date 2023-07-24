@@ -9,7 +9,7 @@
 
 
 
-National institute of posts and telecommunications <a href="http://www.inpt.ac.ma/" target="_blank">INPT</a> Rabat, Morocco.
+INPT <a href="http://www.inpt.ac.ma/" target="_blank">INPT</a> Rabat, Morocco.
 
 
 <div style="text-align:center;padding-top:20px">
