@@ -82,7 +82,7 @@ Now before training our model we have to process our data :
 :warning: **We will not perform feature scaling for binary columns that contains 0's and 1's** .
 
 
-# Dataset visualization : 
+# Dataset visualization  
 
    After having our dataset processed, we move to the next step which is dataset visualization; so that patterns, trends and correlations that might not otherwise be detected can be now exposed.
 
@@ -104,7 +104,7 @@ Now before training our model we have to process our data :
 
 
 
-# Model evaluation (metrics) :
+# Model evaluation (metrics)
 
 
 Before starting training our classifers let us define the metrics that we will use to compare between our three classifiers :
