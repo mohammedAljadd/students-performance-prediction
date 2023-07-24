@@ -447,11 +447,11 @@ After calling the appropriate function, we got:
 ---------------------------------------------------------------------
 Factors helping students succeed :<br>
     
-    father's education 
+    parents education 
     guardian
     wants to take higher education
     studytime
-    father's job
+    parents job
 ---------------------------------------------------------------------
 Factors leading students to failure :<br>
     
@@ -467,7 +467,7 @@ Factors leading students to failure :<br>
 
 - ****1)**** For **<span style='color:red'>positive impact</span>**, it seems that the factors helping students succeed: <br><br>
     
-   - **Father's education** : if the father has a higher education, he will help his children in their studies so that they will not struggle for a long time with their homeworks.
+   - **Parents education** : This will help his children in their studies so that they will not struggle for a long time with their homeworks.
    <img src='plots\project.cover\father.jpg' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;'>
      
    - **Guardian** : This instance takes three values as our convention: 0,1 and 2, 2 refers to 'other', we conclude than if the guardian is neither mother nor father than the student has a big chance to succeed, but this just the result of our classifer, it is difficult to judge that.
@@ -480,7 +480,7 @@ Factors leading students to failure :<br>
    - **Study time** : This is an import thing to keep in mind, students need to spend many hours studying, do not imagine a student succeeding in his exams and yet do not spend one hour at his desk, but it depends on many things such as subject, timetable ...
    <img src='plots\project.cover\studytime.jpg' width='300cm' height='130cm' style='display: block;margin-left: auto;margin-right: auto;'>
     
-   - **Father's job** : If the father has a good career, then of course he will fulfill the needs of their children in terms of paying additive classes, internet ...
+   - **Paretns job** : If the parennts have a good career, then of course he will fulfill the needs of their children in terms of paying additive classes, internet ...
    <img src='plots\project.cover\fatherjob.jpg' width='300cm' height='180cm' style='display: block;margin-left: auto;margin-right: auto;'>
     
 <br><br>
@@ -517,6 +517,7 @@ Now, based on extracted factors, let's give some advices for students, parents a
    - When students are having a lot of failures, the administration, teachers should search for the problems faced by this students and also get contact with the parents for more informations.
    - Student should find, at home, a suitable space to study, they need desks or just a small area when they can focus on their studies. Imagine how you would tell this student not to go out with his friends and spend a lot of time and yet their parents shout all the time in front of him. Parents should keep their problems for themselves. These students need love and peace at home. Students will then spend many hours studying at home.
  
+### NB : this factors are conculded only from the dataset we use!
 
 
 # Conclusion
