@@ -1,4 +1,4 @@
-# Students-performance-and-difficulties-prediction
+# Students performance and difficulties prediction
 
    This academic project is about using machine learning algorithms to predict whether or not a student would pass the final exam. 
    The data set used is from UCI Machine Learning Repository.
